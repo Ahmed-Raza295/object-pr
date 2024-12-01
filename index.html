@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+<div class="header">
+<select onchange="selectBrand()" name="" id="choseBrand">
+    <option value="" selected disabled> select Brand</option>
+</select>
+
+<select onchange="selectProduct()" name="" id="choseProduct">
+    <option value="" selected disabled> select Product</option>
+</select>
+
+<button onclick="searchProduct()" id="searchbtn"> Search Button</button>
+</div>
+
+
+<div id="box" class="hide">
+<div class="center">
+<img src= "" alt="not" width="300px" id="image">
+<h1 class="big" id="head"></h1>
+<h1 id="price"></h1>
+<p id="para"></p>
+</div>
+
+
+</div>
+
+
+    <script src="logic.js"></script>
+</body>
+</html>
